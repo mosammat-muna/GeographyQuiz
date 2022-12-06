@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="quiz.css">
+  <script src="quiz.js" defer></script>
+  <title>Quiz</title>
+</head>
+<body>
+    <div id="wrapper">
+        <h1>Quiz on Geography</h1>
+        
+        <div id="question">
+            <p>Score : <span id="score">0</span>
+            <p id="q"></p>
+        </div> 
+        
+        <input type="text" placeholder="Write answer(in lowercase)" name="answer" id="answer">
+        <button id="btn" onclick="nextQuestion()">Submit answer</button>
+        
+        <div id="displayresult">
+            <div id="displayresultcontent">
+                <div id="displayresultheader">
+                    <h2></h2>
+                </div>   
+                <div id="displayresulbody">
+                    <p id="correction"></p>
+                </div>
+                
+                <div id="displayresulfooter">
+                    <h2 onclick="resetGame()">End</h2>
+                </div> 
+            </div> 
+        </div> 
+        
+        <button id="start" onclick="startGame()">Start</button>
+    </div> 
+  
+</body>
+</html>
